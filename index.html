@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timur Emre Ozkose | Data Science & ML</title>
+  <meta name="description" content="Timur Emre Ozkose: data scientist and ML/AI researcher at George Mason University. Projects, research, experience, and a bit about life off the clock.">
+  <meta property="og:title" content="Timur Emre Ozkose | Data Science & ML">
+  <meta property="og:description" content="Data scientist and ML/AI researcher. Projects, research, experience, and a bit about life off the clock.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teozkose.github.io/">
+  <meta property="og:image" content="https://teozkose.github.io/assets/img/portrait.png">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="brand" href="#hero" aria-label="Back to top">
+        <span class="brand__mark">TO</span>
+        <span class="brand__name">Timur Ozkose</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#off-the-clock">Off the Clock</a></li>
+          <li><a href="#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__tools">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn nav__burger" id="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="badge"><span class="dot"></span>Open to full-time roles, starting 2027</p>
+          <h1>Hi, I'm Timur.</h1>
+          <p class="hero__role">I'm a <span class="typed" id="typed" aria-hidden="true">data scientist</span><span class="sr-only">data scientist, ML and AI researcher, analytics builder, and quant-minded problem solver</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="hero__lede">I turn messy data into models, forecasts and tools people actually use. Senior in Computational and Data Sciences at George Mason University, published IEEE author, and the person on the team who's usually up first.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">See my projects</a>
+            <a class="btn btn--ghost" href="#contact">Say hello</a>
+          </div>
+          <ul class="hero__social" aria-label="Profiles">
+            <li><a href="https://github.com/teozkose" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/tozkose" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com/citations?hl=en&amp;user=GYbyNLcAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          </ul>
+        </div>
+        <div class="hero__photo">
+          <div class="photo-ring">
+            <img src="assets/img/portrait.png" alt="Portrait of Timur Ozkose" width="560" height="560">
+          </div>
+          <div class="float-chip float-chip--a">📍 Fairfax, VA</div>
+          <div class="float-chip float-chip--b">🎓 GMU '27</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="By the numbers">
+      <div class="wrap stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="3" data-suffix="+">3+</span><span class="stat__label">years of hands-on data work</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="3">3</span><span class="stat__label">published or accepted IEEE papers</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="536">536</span><span class="stat__label">research papers mined with LLM pipelines</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="170" data-suffix="+">170+</span><span class="stat__label">students supported as a TA</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="3.83" data-decimals="2">3.83</span><span class="stat__label">GPA, Dean's List 6 semesters</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about__grid">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Data person by training, people person by nature.</h2>
+          <p>I'm a senior at George Mason University studying Computational and Data Sciences with a minor in Finance, graduating in May 2027. I like problems where the data is messy and the answer actually changes a decision.</p>
+          <p>Right now I split my time between two roles. As an AI &amp; Data Intern at The Health Management Academy, I build dashboards and data tools for teams that work with some of the largest health systems in the country. As a Research Assistant in GMU's Computational and Data Sciences Department, I build LLM pipelines that read and extract data from hundreds of research papers.</p>
+          <p>I'm easygoing, I like working with people, and I'm happiest on a team where we can trade ideas freely. I'm looking for full-time roles in data science, machine learning, analytics, and quantitative work.</p>
+        </div>
+        <aside class="card now reveal" aria-label="Currently">
+          <h3>Currently</h3>
+          <ul class="now__list">
+            <li><span class="now__icon">💼</span><div><strong>AI &amp; Data Intern</strong><span>The Health Management Academy</span></div></li>
+            <li><span class="now__icon">🔬</span><div><strong>Research Assistant</strong><span>GMU Computational &amp; Data Sciences</span></div></li>
+            <li><span class="now__icon">🎓</span><div><strong>B.S. Computational &amp; Data Sciences</strong><span>Minor in Finance · May 2027</span></div></li>
+            <li><span class="now__icon">📖</span><div><strong>Always reading</strong><span>Open to just about any genre</span></div></li>
+          </ul>
+          <img class="now__logo" src="assets/img/gmu-logo.png" alt="George Mason University logo" width="1080" height="324" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--tint" id="projects">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built, results first.</h2>
+          <p class="section__sub">Each one is complete and reproducible: the data, the code, and a README that explains every number.</p>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__img"><img src="assets/img/proj-markdown.png" alt="Bar chart comparing revenue and margin across five markdown scenarios" loading="lazy" width="900" height="450"></div>
+            <div class="project__body">
+              <p class="project__metric"><strong>+14.6%</strong> revenue at the same margin</p>
+              <h3>Price Elasticity &amp; Markdown Optimization</h3>
+              <p>Estimated how demand for 60 retail products responds to price, then picked the best markdown for each one with a mixed-integer program under inventory and margin limits.</p>
+              <ul class="tags"><li>Python</li><li>Regression</li><li>PuLP</li><li>Optimization</li><li>Pricing</li></ul>
+              <a class="link-arrow" href="https://github.com/teozkose/retail-price-elasticity-markdown" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__img"><img src="assets/img/proj-forecast.png" alt="Line chart of weekly forecasts against actual sales" loading="lazy" width="900" height="297"></div>
+            <div class="project__body">
+              <p class="project__metric"><strong>24% lower</strong> error than the naive baseline</p>
+              <h3>Weekly Demand Forecasting</h3>
+              <p>One-week-ahead forecasts for a retailer's top 20 products. Baselines, Holt smoothing and gradient boosting are compared on a rolling 12-week holdout that includes the pre-Christmas rush.</p>
+              <ul class="tags"><li>Time Series</li><li>Holt</li><li>Gradient Boosting</li><li>WAPE</li></ul>
+              <a class="link-arrow" href="https://github.com/teozkose/demand-forecasting-weekly-sales" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__img"><img src="assets/img/proj-delivery.png" alt="Scatter plot of predicted against actual delivery times" loading="lazy" width="900" height="818"></div>
+            <div class="project__body">
+              <p class="project__metric"><strong>R² 0.84</strong>, about 3 minutes off on average</p>
+              <h3>Delivery-Time Prediction</h3>
+              <p>Predicted food-delivery minutes from 40,000+ orders, then explained what drives them with SHAP and permutation importance. Distance, traffic and courier factors matter most.</p>
+              <ul class="tags"><li>XGBoost</li><li>Random Forest</li><li>SHAP</li><li>PCA</li></ul>
+              <a class="link-arrow" href="https://github.com/teozkose/uber-eats-delivery-time" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+        <p class="more reveal"><a class="link-arrow" href="https://github.com/teozkose?tab=repositories" target="_blank" rel="noopener">See every project on GitHub</a></p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've been putting in the work.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__meta"><span class="pill pill--now">Current</span><span class="tl__date">June 2026 – Present</span></div>
+            <div class="card tl__card">
+              <h3>AI &amp; Data Intern</h3>
+              <p class="tl__org">The Health Management Academy · Arlington, VA</p>
+              <ul>
+                <li>Cut 3–4 hours of daily Salesforce reporting with a Streamlit and React KPI dashboard for $2B+ health systems.</li>
+                <li>Shipped Tally and Scout, the first intern-built apps leadership approved for account management, finance, and sales.</li>
+                <li>Engineered a pandas pipeline that cleans and validates 2,000+ contract records across 50+ health-system accounts.</li>
+                <li>Mapped 20+ job-title variants to a 6-tier hierarchy and 100+ event codes behind a renewal-risk scorecard.</li>
+              </ul>
+              <ul class="tags"><li>Salesforce</li><li>Streamlit</li><li>React</li><li>Pandas</li><li>Dashboards</li><li>Risk Scoring</li></ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta"><span class="pill pill--now">Current</span><span class="tl__date">Aug 2023 – Present</span></div>
+            <div class="card tl__card">
+              <h3>Research Assistant</h3>
+              <p class="tl__org">GMU, Department of Computational &amp; Data Sciences · Fairfax, VA</p>
+              <ul>
+                <li>Extract datasets from 536 research papers with Python and LLM APIs, cutting review time 80%.</li>
+                <li>Build GPT-4.1, GPT-5, Gemini 2.5 Pro and Gemini 3 Pro pipelines, validating outputs against source data.</li>
+                <li>Clean and transform 1,000+ records for statistical modeling and risk analysis.</li>
+                <li>Develop and evaluate agent-based models, presenting findings in Seaborn, Plotly and Matplotlib.</li>
+              </ul>
+              <ul class="tags"><li>LLM Pipelines</li><li>Python</li><li>NLP</li><li>Agent-Based Modeling</li></ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta"><span class="tl__date">May 2025 – Aug 2025</span></div>
+            <div class="card tl__card">
+              <h3>Research Intern</h3>
+              <p class="tl__org">GMU, Department of Geoinformation Science · Fairfax, VA</p>
+              <ul>
+                <li>Processed, cleaned and analyzed 1,332 social media videos from TikTok, Facebook and Instagram.</li>
+                <li>Built data pipelines for collection, cleaning and feature extraction across 3 platforms.</li>
+                <li>Ran EDA and ML feature development to uncover behavioral patterns in wildlife interaction content.</li>
+                <li>Co-authored the Best Poster winner at the 2025 OSCAR Celebration and presented at APHA 2025.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>Data Pipelines</li><li>Social Media Analytics</li><li>EDA</li></ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__meta"><span class="tl__date">Jan 2024 – May 2026</span></div>
+            <div class="card tl__card">
+              <h3>Teaching Assistant, CDS 130</h3>
+              <p class="tl__org">George Mason University · Computing for Scientists</p>
+              <ul>
+                <li>Supported MATLAB and computational methods instruction for 170+ undergraduates.</li>
+                <li>Graded, tutored one-on-one, and guided students through data analysis and scientific modeling.</li>
+              </ul>
+              <ul class="tags"><li>MATLAB</li><li>Teaching</li><li>Scientific Computing</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section section--tint" id="research">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Research</p>
+          <h2>Papers on LLMs, AI communication and risk.</h2>
+        </div>
+        <div class="papers">
+          <article class="card paper reveal">
+            <span class="pill pill--accepted">Accepted</span>
+            <h3>Leveraging Large Language Models for Systematic Literature Review of Disease Spread Models</h3>
+            <p class="paper__venue">IEEE WinterSim 2026 · Glasgow, Scotland</p>
+            <ul class="tags"><li>LLMs</li><li>NLP</li><li>Automation</li></ul>
+            <a class="link-arrow" href="https://arxiv.org/pdf/2608.26150" target="_blank" rel="noopener">Read on arXiv</a>
+          </article>
+          <article class="card paper reveal">
+            <span class="pill pill--published">Published</span>
+            <h3>AI-Generated Messaging for Life Events</h3>
+            <p class="paper__venue">IEEE &amp; TechRxiv · 2025</p>
+            <p>A comparison of GPT-generated and human expert messaging, using NLP and ML classification.</p>
+            <ul class="tags"><li>NLP</li><li>ML Classification</li><li>AI Communication</li></ul>
+            <a class="link-arrow" href="https://ieeexplore.ieee.org/document/11129070" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+          </article>
+          <article class="card paper reveal">
+            <span class="pill pill--published">Published</span>
+            <h3>Evolving Risk Communication</h3>
+            <p class="paper__venue">IEEE SIEDS 2025 · University of Virginia</p>
+            <p>An analysis of personalized narrative risk communication using structured AI prompts and ML models.</p>
+            <ul class="tags"><li>Risk Analysis</li><li>AI Prompting</li><li>ML Models</li></ul>
+            <a class="link-arrow" href="https://ieeexplore.ieee.org/document/11021204" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>The toolkit.</h2>
+        </div>
+        <div class="skills">
+          <div class="card skill reveal">
+            <h3><span class="skill__icon">⌨️</span>Languages &amp; Tools</h3>
+            <ul class="chips"><li class="chip--key">Python</li><li class="chip--key">SQL</li><li>R</li><li>Pandas</li><li>NumPy</li><li>Jupyter</li><li>Git/GitHub</li><li>MySQL</li><li>Docker</li><li>MATLAB</li><li>Excel</li></ul>
+          </div>
+          <div class="card skill reveal">
+            <h3><span class="skill__icon">🧠</span>Machine Learning &amp; AI</h3>
+            <ul class="chips"><li class="chip--key">Scikit-learn</li><li class="chip--key">LLMs</li><li>PyTorch</li><li>TensorFlow</li><li>XGBoost</li><li>Random Forest</li><li>NLP</li><li>Fine-Tuning</li><li>Feature Engineering</li><li>Model Evaluation</li><li>Agent-Based Modeling</li></ul>
+          </div>
+          <div class="card skill reveal">
+            <h3><span class="skill__icon">📊</span>Analytics &amp; BI</h3>
+            <ul class="chips"><li class="chip--key">Statistics</li><li class="chip--key">Forecasting</li><li>A/B Testing</li><li>Regression</li><li>EDA</li><li>Tableau</li><li>Power BI</li><li>Streamlit</li><li>Plotly</li><li>Seaborn</li><li>Salesforce</li></ul>
+          </div>
+          <div class="card skill reveal">
+            <h3><span class="skill__icon">📈</span>Finance &amp; Quant</h3>
+            <ul class="chips"><li class="chip--key">Quantitative Analysis</li><li class="chip--key">Optimization (PuLP)</li><li>Price Elasticity</li><li>Financial Modeling</li><li>Investment Analysis</li><li>Firm Valuation</li><li>Accounting</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="section section--tint" id="community">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Recognition &amp; Community</p>
+          <h2>Awards, and the groups I show up for.</h2>
+        </div>
+        <div class="community">
+          <div class="reveal">
+            <h3 class="col-title">Awards</h3>
+            <ul class="list-rows">
+              <li><span class="row__icon">🏆</span><div><strong>Best Poster Award</strong><span>OSCAR 2025 Celebration, George Mason University</span></div></li>
+              <li><span class="row__icon">📄</span><div><strong>IEEE Author</strong><span>Published at SIEDS 2025 and TechRxiv; accepted at WinterSim 2026</span></div></li>
+              <li><span class="row__icon">🎓</span><div><strong>Dean's List</strong><span>6 consecutive semesters · GPA 3.83</span></div></li>
+              <li><span class="row__icon">🎤</span><div><strong>Conference Presenter</strong><span>APHA 2025 Annual Conference</span></div></li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h3 class="col-title">Involvement</h3>
+            <ul class="list-rows">
+              <li><span class="row__icon">🏀</span><div><strong>GMU Basketball</strong><span>Team Manager</span></div></li>
+              <li><span class="row__icon">🤖</span><div><strong>Mason AI Club</strong><span>Member</span></div></li>
+              <li><span class="row__icon">🌍</span><div><strong>Model United Nations</strong><span>Represented Hungary</span></div></li>
+              <li><span class="row__icon">✍️</span><div><strong>GlobalWE Writing Contest</strong><span>Harvard University</span></div></li>
+              <li><span class="row__icon">💛</span><div><strong>Cerebral Palsy Project</strong><span>Volunteer since 2019</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Off the clock -->
+    <section class="section" id="off-the-clock">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Off the Clock</p>
+          <h2>A few things that keep me going.</h2>
+          <p class="section__sub">Work is a big part of my life, but it's not all of it.</p>
+        </div>
+        <div class="hobbies">
+          <article class="hobby hobby--court reveal">
+            <svg class="court" viewBox="0 0 200 120" aria-hidden="true">
+              <rect x="4" y="4" width="192" height="112" rx="6"/>
+              <path d="M100 4v112"/><circle cx="100" cy="60" r="16"/>
+              <path d="M4 34h34v52H4M196 34h-34v52h34"/>
+              <path d="M38 22a44 44 0 0 1 0 76M162 22a44 44 0 0 0 0 76"/>
+            </svg>
+            <span class="hobby__emoji">🏀</span>
+            <h3>Basketball</h3>
+            <p>Playing it, watching it, and breaking it down with numbers. Being GMU Basketball's team manager gave me a courtside view of how a program runs.</p>
+          </article>
+          <article class="hobby reveal">
+            <span class="hobby__emoji">🤝</span>
+            <h3>Time with friends</h3>
+            <p>I'm a social, easygoing person. Some of my best days are just hanging out with friends, and I'm always up for meeting new people.</p>
+          </article>
+          <article class="hobby reveal">
+            <span class="hobby__emoji">📚</span>
+            <h3>Reading</h3>
+            <p>I love reading and I'm open to almost any kind of book. Recommendations are always welcome.</p>
+          </article>
+          <article class="hobby reveal">
+            <span class="hobby__emoji">🌲</span>
+            <h3>Getting outside</h3>
+            <p>Time in nature is how I reset, whether that's a trail, a park or just a long walk outside.</p>
+          </article>
+          <article class="hobby reveal">
+            <span class="hobby__emoji">🌅</span>
+            <h3>Early mornings, calm music</h3>
+            <p>I'm an early bird. Give me a quiet morning and something calm in my headphones, and that's when I think most clearly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="contact__card reveal">
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2>Let's talk.</h2>
+          <p>I'm open to full-time roles, research collaborations, and good conversations about data science, ML and AI. If you'd like my resume, email me and I'll send the version that fits your role.</p>
+          <div class="contact__actions">
+            <a class="btn btn--light" href="mailto:teozkose@gmail.com?subject=Resume%20request">Ask for my resume</a>
+            <a class="btn btn--outline-light" href="mailto:teozkose@gmail.com">teozkose@gmail.com</a>
+          </div>
+          <ul class="contact__links">
+            <li><a href="https://linkedin.com/in/tozkose" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/teozkose" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?hl=en&amp;user=GYbyNLcAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Timur Emre Ozkose</p>
+      <a href="#hero" class="link-arrow link-arrow--up">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
