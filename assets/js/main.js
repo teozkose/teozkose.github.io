@@ -107,5 +107,33 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
+  // Projects carousel: arrows page through the cards, and hide at either end
+  var track = document.getElementById("projects-track");
+  if (track) {
+    var prev = document.querySelector(".carousel__btn--prev");
+    var next = document.querySelector(".carousel__btn--next");
+    var page = function (dir) {
+      var card = track.querySelector(".project");
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      var step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+      var perView = Math.max(1, Math.floor((track.clientWidth + gap) / step));
+      track.scrollBy({ left: dir * step * perView, behavior: reduceMotion ? "auto" : "smooth" });
+    };
+    var sync = function () {
+      var max = track.scrollWidth - track.clientWidth;
+      prev.hidden = track.scrollLeft <= 4;
+      next.hidden = track.scrollLeft >= max - 4;
+    };
+    prev.addEventListener("click", function () { page(-1); });
+    next.addEventListener("click", function () { page(1); });
+    track.addEventListener("scroll", sync, { passive: true });
+    track.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); page(1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); page(-1); }
+    });
+    window.addEventListener("resize", sync);
+    sync();
+  }
+
   document.getElementById("year").textContent = new Date().getFullYear();
 })();
