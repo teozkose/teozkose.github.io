@@ -293,7 +293,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .projects > .project { scroll-snap-align: start; }
 .js .projects .reveal { opacity: 1; transform: none; }
 .carousel__btn {
-  position: absolute; top: 50%; z-index: 2; display: grid; place-items: center;
+  position: absolute; top: 130px; z-index: 2; display: grid; place-items: center;
   width: 52px; height: 52px; margin-top: -26px; border-radius: 50%; cursor: pointer;
   background: var(--ink); color: var(--bg); border: 3px solid var(--bg); box-shadow: var(--shadow-lg);
   transition: transform .2s, background-color .2s;
