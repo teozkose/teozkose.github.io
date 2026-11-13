@@ -177,12 +177,12 @@
             </div>
           </article>
           <article class="project reveal">
-            <div class="project__img"><img src="assets/img/proj-uber-eats-delivery-time.png" alt="Scatter plot of predicted against actual delivery times" loading="lazy" width="900" height="818"></div>
+            <div class="project__img"><img src="assets/img/proj-uber-eats-delivery-time.png" alt="Late-order rate against average promised ETA for three ETA policies and three grace windows" loading="lazy" width="900" height="582"></div>
             <div class="project__body">
-              <p class="project__metric"><strong>R² 0.84</strong>, about 3 minutes off on average</p>
+              <p class="project__metric"><strong>3.07 min</strong> average error on unseen weeks, 56% below a lookup table</p>
               <h3>Delivery-Time Prediction</h3>
-              <p>Predicted food-delivery minutes from 40,000+ orders, then explained what drives them with SHAP and permutation importance. Distance, traffic and courier factors matter most.</p>
-              <ul class="tags"><li>XGBoost</li><li>Random Forest</li><li>SHAP</li><li>PCA</li></ul>
+              <p>Predicts food-delivery minutes for 40,000+ orders across 22 cities, tested on the last ten days with bootstrap intervals and 80% prediction intervals. Promising the 90th-percentile time cuts late-order refunds from $475 to $20 per 1,000 orders for 4.7 extra minutes on the ETA.</p>
+              <ul class="tags"><li>XGBoost</li><li>Quantile regression</li><li>Bootstrap CIs</li><li>Time-ordered validation</li><li>SHAP</li></ul>
               <a class="link-arrow" href="https://github.com/teozkose/uber-eats-delivery-time" target="_blank" rel="noopener">View on GitHub</a>
             </div>
           </article>
