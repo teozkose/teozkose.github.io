@@ -177,12 +177,12 @@
             </div>
           </article>
           <article class="project reveal">
-            <div class="project__img"><img src="assets/img/proj-demand-forecasting-weekly-sales.png" alt="Line chart of weekly forecasts against actual sales" loading="lazy" width="900" height="297"></div>
+            <div class="project__img"><img src="assets/img/proj-demand-forecasting-weekly-sales.png" alt="Fill rate against leftover stock for each forecast at 90, 95 and 98 percent service targets" loading="lazy" width="900" height="504"></div>
             <div class="project__body">
-              <p class="project__metric"><strong>24% lower</strong> error than the naive baseline</p>
+              <p class="project__metric"><strong>27% lower</strong> forecast error than last-week naive across 20 products</p>
               <h3>Weekly Demand Forecasting</h3>
-              <p>One-week-ahead forecasts for a retailer's top 20 products. Baselines, Holt smoothing and gradient boosting are compared on a rolling 12-week holdout that includes the pre-Christmas rush.</p>
-              <ul class="tags"><li>Time Series</li><li>Holt</li><li>Gradient Boosting</li><li>WAPE</li></ul>
+              <p>Forecasts weekly units for a wholesaler's 20 best sellers and the total over a 10-week rolling-origin backtest into the Christmas peak, with bootstrap intervals and 80% prediction intervals. Damped Holt is most accurate per product, boosting is best on the total, and safety stock sized on pre-peak errors fills only 87.6% of demand at a 95% target.</p>
+              <ul class="tags"><li>Time series</li><li>Rolling-origin backtest</li><li>Exponential smoothing</li><li>Quantile gradient boosting</li><li>Inventory</li></ul>
               <a class="link-arrow" href="https://github.com/teozkose/demand-forecasting-weekly-sales" target="_blank" rel="noopener">View on GitHub</a>
             </div>
           </article>
